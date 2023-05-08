@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MARTIN Order Form</title>
+  <style type="text/css">
+    table{
+      border:5px solid #303c6c;
+      border-collapse: collapse;
+      margin:10px auto;
+    }
+    
+    td, th{
+      border-bottom: 1px solid #b4dfe5;
+      border-collapse:collapse;
+      padding:15px;
+    }
+    
+    body{
+      font-family:Tahoma;
+      color:navy;
+      font-size:1.125em;
+    }
+    
+    thead tr{
+      background-color:#303c6c;
+      color: white;
+    }
+    
+    input[type=text],textarea,select{
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius:4px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: #b4dfe5;
+      color: navy;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: verdana;
+      font-size:1.125em;
+    }
+    
+    input[type=reset] {
+      width: 100%;
+      background-color: #b4dfe5;
+      color: navy;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: verdana;
+      font-size:1.125em;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #379683;
+      color:white;
+    }
+    
+    input[type=reset]:hover {
+      background-color: #379683;
+      color:white;
+    }
+    
+    textarea{
+      resize:none;
+    }
+	
+	.center{
+      text-align: center;
+      width: 400px;
+      height: auto;
+      padding: 5px;
+      margin: auto;
+      float: center;
+	}
+	
+  </style>
+</head>
+<body>
+  <link rel="stylesheet" type="text/css">
+  <!--MARTIN, Zach Emmañuelle -->
+  <!--05/07/23-->
+  
+  <table>
+    <form method="post" action="OrderForm.html">
+	
+	<div class="center">
+	<img src="MARTIN_IMAGES_ITAD/BrandLogo.jpg" style="width:100%">
+	</div>
+	
+    <thead>
+      <tr>
+        <th colspan="4">Order Form</th>
+      </tr>
+    </thead>
+      
+    <tbody>
+      <tr>
+        <td><label for="name">Name: </label></td>
+        <td><input type="text" name="name" size="30" placeholder="Type your full name here"
+        maxlength ="50" autofocus required></td>
+      </tr>
+      
+      <tr>
+        <td><label for="Address">Address: </label></td>
+        <td><input type="text" name="Address" size="30" placeholder="Type your complete address here"
+        maxlength ="50" autofocus required></td>
+      </tr>
+      
+      <tr>
+        <td><label for="Contact">Contact Number: </label></td>
+        <td><input type="text" name="Contact" size="30" placeholder="Type your number here"
+        maxlength ="50" autofocus required></td>
+      </tr>
+      
+      <tr>
+        <td><label for="Email">Email Address: </label></td>
+        <td><input type="text" name="Email" size="30" placeholder="Type your email here"
+        maxlength ="50" autofocus required></td>
+      </tr>
+      
+      <tr>
+        <td><label for="Description">Description to the Area: </label></td>
+        <td><textarea rows="8" cols="27" required enabled placeholder="Description on how to get to your house"></textarea></td>
+      </tr>
+      
+      <thead>
+      <tr>
+        <th colspan="4">Burger</th>
+      </tr>
+      </thead>
+            
+		<tr>
+        <td> <label for="checkAll"> Check all options: </label></td>
+        <td>
+            <input type="checkbox" id="feature1" name="feature1">
+            <label for="feature1"> Single Patty </label><br>
+              
+            <input type="checkbox" id="feature2" name="feature2">
+            <label for="feature2"> Double Patty</label><br>
+               
+            <input type="checkbox" id="feature3" name="feature3">
+            <label for="feature3"> With Cheese</label><br>
+          
+            <input type="checkbox" id="feature4" name="feature4">
+            <label for="feature4"> Coleslaw</label><br>
+          
+            <input type="checkbox" id="feature5" name="feature5">
+            <label for="feature5"> Tomato</label><br>
+          
+            <input type="checkbox" id="feature6" name="feature6">
+            <label for="feature6"> Onion</label><br>
+        </td>
+       </tr>
+      
+      <tr>
+        <td><label for="BurgerBun">Type of Burger Bun:</label></td>
+        <td>
+          <input type="radio" id="WhiteBun" name="Bun" value="WhiteBun" CHECKED>
+              <label for="WhiteBun">White Bun</label><br>
+          <input type="radio" id="WheatBun" name="Bun" value="WheatBun">
+              <label for= "WheatBun">Wheat Bun</label><br>
+          <input type="radio" id="HoneyBun" name="Bun" value="HoneyBun">
+              <label for= "HoneyBun">Honey Oat</label><br>
+          <input type="radio" id="SugarBun" name="Bun" value="SugarBun">
+              <label for= "SugarBun">Sugar Free</label>
+        </td>
+      </tr>
+      
+      <thead>
+      <tr>
+        <th colspan="4">Pasta</th>
+      </tr>
+      </thead>
+       
+      <tr>
+        <td><label for="Pasta">Type of Pasta:</label></td>
+        <td>
+          <input type="radio" id="Spaghetti" name="Pasta" value="Spaghetti" CHECKED>
+              <label for="Spaghetti">Spaghetti w/ Garlic Bread</label><br>
+          <input type="radio" id="Carbonara" name="Pasta" value="Carbonara">
+              <label for= "Carbonara">Carbonara w/ Garlic Bread</label><br>
+          <input type="radio" id="Pesto" name="Pasta" value="Pesto">
+              <label for= "Pesto">Pesto w/ Garlic Bread</label><br>
+          <input type="radio" id="Lasagna" name="Pasta" value="Lasagna">
+              <label for= "Lasagna">Lasagna w/ Garlic Bread</label>
+        </td>
+      </tr>
+      
+      <tr>
+        <td> <label for="checkAll"> Extras: </label></td>
+        <td>
+            <input type="checkbox" id="Extra1" name="Extra1">
+            <label for="Extra1"> Extra Cheese </label><br>
+              
+            <input type="checkbox" id="Extra2" name="Extra2">
+            <label for="Extra2"> Extra Sauce</label><br>
+               
+            <input type="checkbox" id="Extra3" name="Extra3">
+            <label for="Extra3"> Extra Garlic Bread</label><br>
+        </td>
+       </tr>
+      
+      <tr>
+        <td><laberl for="PastaBox">Quantity(Per Box):</label></td>
+        <td>
+            <select name="PastaBox" id="PastaBox" size="1">
+                <option value="OneBox"SELECTED>1</option>
+                <option value="TwoBox">2</option>
+                <option value="ThreeBox">3</option>
+                <option value="FourBox">4</option>
+                <option value="FiveBox">5</option>
+            </select>
+        </td> 
+      </tr>
+      
+      <thead>
+      <tr>
+        <th colspan="4">Fries</th>
+      </tr>
+      </thead>
+      
+      <tr>
+        <td><laberl for="FriesSize">Size of Fries:</label></td>
+        <td>
+            <select name="FriesSize" id="FriesSize" size="1">
+                <option value="RegFries"SELECTED>Regular</option>
+                <option value="MedFries">Medium</option>
+                <option value="LarFries">Large</option>
+                <option value="VerLarFries">Very Large</option>
+            </select>
+        </td> 
+      </tr>
+      
+      <tr>
+        <td><label for="FriesFlavor">Fries Flavor:</label></td>
+        <td>
+          <input type="radio" id="Cheese" name="FriesFlavor" value="Cheese" CHECKED>
+              <label for="Cheese">Cheese</label><br>
+          <input type="radio" id="Barbeque" name="FriesFlavor" value="Barbeque">
+              <label for= "Barbeque">Barbeque</label><br>
+          <input type="radio" id="SBarbeque" name="FriesFlavor" value="SBarbeque">
+              <label for= "SBarbeque">Spicy Barbeque</label><br>
+          <input type="radio" id="SourC" name="FriesFlavor" value="SourC">
+              <label for= "SourC">Sour and Cream</label>
+        </td>
+      </tr>
+      
+      <tr>
+        <td><laberl for="Fries">Quantity:</label></td>
+        <td>
+            <select name="Fries" id="Fries" size="1">
+                <option value="OneFries"SELECTED>1</option>
+                <option value="TwoFries">2</option>
+                <option value="ThreeFries">3</option>
+                <option value="FourFries">4</option>
+                <option value="FiveFries">5</option>
+            </select>
+        </td> 
+      </tr>
+      
+      <thead>
+      <tr>
+        <th colspan="4">Drinks</th>
+      </tr>
+      </thead>
+      
+      <tr>
+        <td><laberl for="DrinkSize">Size of Drink:</label></td>
+        <td>
+            <select name="DrinkSize" id="DrinkSize" size="1">
+                <option value="RegDrink"SELECTED>Regular</option>
+                <option value="MedDrink">Medium</option>
+                <option value="LarDrink">Large</option>
+            </select>
+        </td> 
+      </tr>
+      
+      <tr>
+        <td><label for="DrinkType">Type of Drink:</label></td>
+        <td>
+          <input type="radio" id="Coke" name="DrinkType" value="Coke" CHECKED>
+              <label for="Coke">Coke</label><br>
+          <input type="radio" id="Sprite" name="DrinkType" value="Sprite">
+              <label for= "Sprite">Sprite</label><br>
+          <input type="radio" id="Royal" name="DrinkType" value="Royal">
+              <label for= "Royal">Royal</label><br>
+          <input type="radio" id="IcedTea" name="DrinkType" value="IcedTea">
+              <label for= "IcedTea">Iced Tea</label><br>
+          <input type="radio" id="PineappleJuice" name="DrinkType" value="PineappleJuice">
+              <label for= "PineappleJuice">Pineapple Juice</label><br>
+          <input type="radio" id="Water" name="DrinkType" value="Water">
+              <label for= "Water">Water</label>
+        </td>
+      </tr>
+      
+      <tr>
+        <td><laberl for="Fries">Quantity:</label></td>
+        <td>
+            <select name="Fries" id="Fries" size="1">
+                <option value="OneFries"SELECTED>1</option>
+                <option value="TwoFries">2</option>
+                <option value="ThreeFries">3</option>
+                <option value="FourFries">4</option>
+                <option value="FiveFries">5</option>
+            </select>
+        </td> 
+      </tr>
+      
+      <tr>
+        <td><label for="DeliveryType">Delivery:</label></td>
+        <td>
+          <input type="radio" id="Delivery" name="DeliveryType" value="Delivery" CHECKED>
+              <label for="Delivery">Delivery</label>
+          <input type="radio" id="PickUp" name="DeliveryType" value="PickUp">
+              <label for= "PickUp">Pick-up</label>
+        </td>
+      </tr>
+      
+        <tr>
+          <td><label for="ability">Feedback on Order Form</label></td>
+          <td>
+            <textarea rows="10" cols="27" required enabled placeholder="Feedback of Customer on the form"></textarea>
+          </td>
+        </tr>
+      </tbody>
+      
+      <tfoot>
+        <tr>
+          <th colspan="2"><input type="submit" id="btn1" value="Submit Order Form"></th>
+        </tr>
+        
+        <tr>
+          <th colspan="2"><input type="reset" id="btn2" value="Reset Order Form"></th>
+        </tr>
+      </tfoot>
+      
+     </table>
+  </body>
+</html>
+    
